@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox fx:id="hBoxDownSuggest" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="325.0" prefWidth="855.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.PCD.PodcastCollector.Frontend.Controllers.MainPage.DownBoxController">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0" styleClass="boxStyle2">
+         <children>
+            <Button fx:id="leftButtonBoxDownSuggest" mnemonicParsing="false" onAction="#reloadAll" prefHeight="20.0" prefWidth="20.0" styleClass="arrow">
+               <VBox.margin>
+                  <Insets top="150.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <VBox fx:id="vBoxDownSuggest" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="326.0" prefWidth="810.0">
+         <children>
+            <Label fx:id="labelDownUpSuggest" prefHeight="25.0" prefWidth="815.0" text="Recommendations replay">
+               <VBox.margin>
+                  <Insets left="30.0" />
+               </VBox.margin></Label>
+            <HBox fx:id="hBoxDownUpSuggest" prefHeight="132.0" prefWidth="815.0" styleClass="boxStyle">
+               <children>
+                  <Button fx:id="leftButtonDownUpSuggest" mnemonicParsing="false" onAction="#reloadUp" prefHeight="20.0" prefWidth="20.0" styleClass="arrow">
+                     <HBox.margin>
+                        <Insets top="55.0" />
+                     </HBox.margin></Button>
+                  <HBox fx:id="hBoxElementDownUpSuggest" prefHeight="132.0" prefWidth="660.0">
+                     <children>
+                        <fx:include fx:id="element1DownUpSuggest" source="element.fxml" />
+                        <fx:include fx:id="element2DownUpSuggest" source="element.fxml" />
+                        <fx:include fx:id="element3DownUpSuggest" source="element.fxml" />
+                        <fx:include fx:id="element4DownUpSuggest" source="element.fxml" />
+                        <fx:include fx:id="element5DownUpSuggest" source="element.fxml" />
+                     </children>
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                  </HBox>
+                  <Button fx:id="rightButtonDownUpSuggest" mnemonicParsing="false" onAction="#reloadUp" prefHeight="20.0" prefWidth="20.0" styleClass="worra">
+                     <HBox.margin>
+                        <Insets top="55.0" />
+                     </HBox.margin></Button>
+               </children>
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" />
+               </VBox.margin>
+            </HBox>
+            <Label fx:id="labelDownDownSuggest" prefHeight="25.0" prefWidth="815.0" text="Recommandation nouveautés">
+               <VBox.margin>
+                  <Insets left="30.0" />
+               </VBox.margin></Label>
+            <HBox fx:id="hBoxDownDownSuggest" prefHeight="132.0" prefWidth="815.0" styleClass="boxStyle">
+               <children>
+                  <Button fx:id="leftButtonDownDownSuggest" mnemonicParsing="false" onAction="#reloadDown" prefHeight="20.0" prefWidth="20.0" styleClass="arrow">
+                     <HBox.margin>
+                        <Insets top="55.0" />
+                     </HBox.margin></Button>
+                  <HBox fx:id="hBoxElementDownDownSuggest" prefHeight="132.0" prefWidth="660.0">
+                     <children>
+                        <fx:include fx:id="element1DownDownSuggest" source="element.fxml" />
+                        <fx:include fx:id="element2DownDownSuggest" source="element.fxml" />
+                        <fx:include fx:id="element3DownDownSuggest" source="element.fxml" />
+                        <fx:include fx:id="element4DownDownSuggest" source="element.fxml" />
+                        <fx:include fx:id="element5DownDownSuggest" source="element.fxml" />
+                     </children>
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                  </HBox>
+                  <Button fx:id="rightButtonDownDownSuggest" mnemonicParsing="false" onAction="#reloadDown" prefHeight="20.0" prefWidth="20.0" styleClass="worra">
+                     <HBox.margin>
+                        <Insets top="55.0" />
+                     </HBox.margin></Button>
+               </children>
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox prefHeight="200.0" prefWidth="100.0" styleClass="boxStyle2">
+         <children>
+            <Button fx:id="rightButtonDownBoxSuggest" mnemonicParsing="false" onAction="#reloadAll" prefHeight="20.0" prefWidth="20.0" styleClass="worra">
+               <VBox.margin>
+                  <Insets top="150.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</HBox>

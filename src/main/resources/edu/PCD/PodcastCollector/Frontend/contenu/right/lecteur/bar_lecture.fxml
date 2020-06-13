@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="855.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.PCD.PodcastCollector.Frontend.Controllers.MainPage.BarLectureController">
+   <children>
+      <ImageView fx:id="coverImage" fitHeight="65.0" fitWidth="65.0" pickOnBounds="true" smooth="false">
+         <HBox.margin>
+            <Insets left="5.0" top="2.0" />
+         </HBox.margin>
+         <image>
+            <Image url="@../../../images/default.jpg" />
+         </image>
+      </ImageView>
+      <VBox prefHeight="50.0" prefWidth="300.0">
+         <children>
+            <Label fx:id="titreBarLecture" text="Titre" />
+            <Text fx:id="descriptionBarLecture" strokeType="OUTSIDE" strokeWidth="0.0" text="Description :" />
+         </children>
+         <HBox.margin>
+            <Insets left="20.0" />
+         </HBox.margin>
+      </VBox>
+      <VBox prefHeight="66.0" prefWidth="362.0">
+         <children>
+            <HBox prefHeight="36.0" prefWidth="362.0">
+               <children>
+            
+                  <Button fx:id="playBarLecture" maxHeight="30.0" maxWidth="30.0" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" onAction="#play" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fx:id="playImage" fitHeight="25.0" fitWidth="30.0">
+                           <image>
+                              <Image url="@../../../images/png/play-button.png" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D />
+                           </viewport>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets top="7.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="pauseBarLecture" maxHeight="30.0" maxWidth="30.0" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" onAction="#pause" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/png/pause.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets top="7.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding></Button>
+                  <Button fx:id="upBarLecture" maxHeight="30.0" maxWidth="30.0" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" onAction="#volumeDown" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: transparent;">
+
+                     <HBox.margin>
+                        <Insets left="40.0" top="7.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/png/minus.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <ProgressBar fx:id="volume" prefWidth="100.0" progress="0.0">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets left="10.0" top="20.0" />
+                     </HBox.margin></ProgressBar>
+
+                  <Button fx:id="downBarLecture" contentDisplay="CENTER" maxHeight="30.0" maxWidth="30.0" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" onAction="#volumeUp" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: transparent;" HBox.hgrow="NEVER">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/png/plus.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets left="10.0" top="7.0" />
+                     </HBox.margin></Button>
+                  <Button fx:id="favoriteButton" maxHeight="30.0" maxWidth="30.0" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" onAction="#favorite" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: transparent;">
+
+                     <HBox.margin>
+                        <Insets left="20.0" top="7.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fx:id="favoriteImage" fitHeight="25.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/png/notfavorite.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="downloadBarLecture" maxHeight="30.0" maxWidth="30.0" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" onAction="#download" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fx:id="downloadImage" fitHeight="25.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/png/download.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets left="10.0" top="7.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="timer" prefHeight="18.0" prefWidth="152.0" text="00:00/00.00">
+                     <HBox.margin>
+                        <Insets top="4.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Slider fx:id="progressBarLecture" maxWidth="346.0" prefHeight="24.0" prefWidth="346.0">
+                     <HBox.margin>
+                        <Insets left="8.0" />
+                     </HBox.margin>
+                  </Slider>
+               </children></HBox>
+         </children>
+         <HBox.margin>
+            <Insets left="20.0" />
+         </HBox.margin>
+      </VBox>
+   </children>
+</HBox>

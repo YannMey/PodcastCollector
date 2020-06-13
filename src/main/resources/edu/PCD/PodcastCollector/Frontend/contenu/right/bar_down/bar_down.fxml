@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="855.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.PCD.PodcastCollector.Frontend.Controllers.MainPage.BarDownController">
+   <children>
+      <Button fx:id="audioBarDown" mnemonicParsing="false" prefHeight="15.0" prefWidth="60.0" text="Audio">
+         <HBox.margin>
+            <Insets left="367.0" />
+         </HBox.margin>
+      </Button>
+      <Button fx:id="videoBarDown" mnemonicParsing="false" prefWidth="60.0" text="Vidéo" />
+   </children>
+</HBox>

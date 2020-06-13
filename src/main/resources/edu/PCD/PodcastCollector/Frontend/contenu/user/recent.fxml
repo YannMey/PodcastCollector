@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="325.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.PCD.PodcastCollector.Frontend.Controllers.MainPage.RecentController">
+   <children>
+      <Label fx:id="titreRecent" prefHeight="20.0" prefWidth="320.0" text="Recent">
+         <VBox.margin>
+            <Insets left="10.0" top="5.0" />
+         </VBox.margin></Label>
+      <ScrollPane fx:id="scrollRecent" hbarPolicy="NEVER" prefHeight="295.0" styleClass="background">
+        <content>
+          <AnchorPane styleClass="background">
+               <children>
+                  <FlowPane fx:id="flowplaneMain" prefHeight="290.0" prefWidth="320.0" />
+               </children></AnchorPane>
+        </content>
+         <VBox.margin>
+            <Insets top="5.0" />
+         </VBox.margin>
+      </ScrollPane>
+   </children>
+</VBox>

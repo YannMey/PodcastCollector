@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="125.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.PCD.PodcastCollector.Frontend.Controllers.MenuMedia.EntetePop1Controller">
+   <children>
+      <ImageView fx:id="imagePop1" fitHeight="126.0" fitWidth="160.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/default_background_audio.jpg" />
+         </image></ImageView>
+      <VBox prefHeight="125.0" prefWidth="241.0">
+         <children>
+            <Label fx:id="nomPop1" prefHeight="16.0" prefWidth="47.0" text="Nom">
+               <VBox.margin>
+                  <Insets bottom="7.0" top="12.0" />
+               </VBox.margin>
+            </Label>
+            <HBox prefHeight="35.0" prefWidth="232.0">
+               <children>
+                  <Button fx:id="downloadPop1" mnemonicParsing="false" text="Download">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="playPop1" mnemonicParsing="false" text="Play" />
+                  <Button fx:id="pausePop1" mnemonicParsing="false" text="Pause" />
+                  <Button fx:id="upPop1" mnemonicParsing="false" text="+">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="downPop1" mnemonicParsing="false" text="-" />
+               </children>
+            </HBox>
+            <ProgressBar fx:id="progressPop1" prefHeight="29.0" prefWidth="200.0" progress="0.38">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="7.0" />
+               </VBox.margin>
+            </ProgressBar>
+         </children>
+         <HBox.margin>
+            <Insets left="5.0" />
+         </HBox.margin>
+      </VBox>
+   </children>
+</HBox>

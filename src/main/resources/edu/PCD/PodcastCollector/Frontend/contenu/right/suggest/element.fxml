@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="paneElementSuggest" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="132.0" prefWidth="136.0" styleClass="paneElement" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.PCD.PodcastCollector.Frontend.Controllers.MainPage.ElementController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="132.0" stroke="BLACK" strokeType="INSIDE" styleClass="backgroundVignette" width="136.0">
+         <fill>
+            <LinearGradient endY="1.0" startX="0.5687023191961623" startY="1.0">
+               <stops>
+                  <Stop color="#313131" />
+                  <Stop color="#313131" offset="0.007633587786259542" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill></Rectangle>
+      <ImageView fx:id="imageElementSuggest" fitHeight="132.0" fitWidth="132.0" layoutX="2.0" onMouseClicked="#doSomething" pickOnBounds="true">
+         <image>
+            <Image url="@../../../images/default_background_audio.jpg" />
+         </image></ImageView>
+      <TextArea fx:id="descriptionElementSuggest" editable="false" layoutY="82.0" prefHeight="50.0" prefWidth="133.0" styleClass="labelVignette" visible="false" wrapText="true">
+         <font>
+            <Font size="6.0" />
+         </font></TextArea>
+      <Label fx:id="nameElementSuggest" alignment="CENTER" layoutY="6.0" prefHeight="17.0" prefWidth="136.0" styleClass="label_el" text="UNKNOWN" textFill="#fff" />
+   </children>
+</Pane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<SplitPane fx:id="splitpane0" dividerPositions="0.08542713567839195" maxHeight="800.0" maxWidth="1280.0" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="800.0" prefWidth="1280.0" styleClass="background-back" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.PCD.PodcastCollector.Frontend.Controllers.MainPage.MainController">
+  <items>
+    <AnchorPane maxHeight="50.0" maxWidth="1280.0" minHeight="0.0" minWidth="0.0" styleClass="statusBar">
+         <children>
+            <fx:include fx:id="statusBar" source="status_bar/status_bar.fxml" />
+         </children></AnchorPane>
+    <AnchorPane maxHeight="750.0" maxWidth="1280.0" minHeight="0.0" minWidth="0.0">
+         <children>
+            <fx:include source="contenu/split_contenu.fxml" />
+         </children></AnchorPane>
+  </items>
+   <effect>
+      <Blend />
+   </effect>
+</SplitPane>

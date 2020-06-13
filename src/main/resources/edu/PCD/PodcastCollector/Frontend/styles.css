@@ -1,0 +1,114 @@
+
+
+
+
+.background{
+    -fx-background-color: transparent;
+    -fx-border-color: black;
+    -fx-border-radius: 1px;
+}
+.background-back{
+    -fx-background-color: linear-gradient(to top left, #778899, #DCDCDC);
+}
+
+.statusBar{
+    -fx-background-color: linear-gradient(to top left, #369899, #4378dc);
+}
+
+.split-pane:horizontal > .split-pane-divider {
+    -fx-background-color: transparent;
+}
+.split-pane:vertical > .split-pane-divider {
+    -fx-background-color: transparent;
+}
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+#imageLogo{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+    -fx-background-radius: 10;
+}
+
+.backgroundVignette{
+}
+
+.labelVignette{
+    -fx-background-color: transparent;
+}
+
+.paneElement{
+    -fx-border-color: black;
+    -fx-border-radius: 2px;
+    -fx-border-style: dotted  dashed  dashed  dashed;
+}
+
+.arrow{
+
+    -fx-background-insets: 0, 10;
+    -fx-background-image: url('images/png/rewind.png');
+    -fx-background-position: center;
+    -fx-background-size: contain,auto;
+    -fx-background-color: transparent;
+}
+
+
+.worra{
+    -fx-background-insets: 0, 10;
+    -fx-background-image: url('images/png/fast-forward.png');
+    -fx-background-position: center;
+    -fx-background-size: contain,auto;
+    -fx-background-color: transparent;
+}
+
+.addButton{
+    -fx-background-image: url('images/png/add_bar.png');
+    -fx-background-position: center;
+    -fx-background-size: contain,auto;
+    -fx-background-color: transparent;
+    -fx-background-repeat: no-repeat;
+}
+
+.label_el{
+    -fx-background-color: linear-gradient(to top, #000000, rgba(1, 3, 79, 0.62));
+    -fx-text-fill: #fff;
+}
+
+.button { -fx-focus-color: firebrick; }
+
+.boxStyle{
+    -fx-border-color: black;
+    -fx-background-color: linear-gradient(to top, rgba(142, 142, 142, 0.66), rgba(68, 64, 67, 0.49));
+}
+
+.boxStyle2{
+    -fx-border-color: black;
+    -fx-background-color: linear-gradient(to top, rgba(142, 142, 142, 0.66), rgba(68, 64, 67, 0.49));
+}
+
+.search_bar{
+}
+
+.profile{
+    -fx-background-image: url("images/png/user.png");
+    -fx-background-position: center;
+    -fx-background-size: contain,auto;
+    -fx-background-color: transparent;
+}
+.settings{
+    -fx-background-image: url("images/settings.png");
+    -fx-background-position: center;
+    -fx-background-size: contain,auto;
+    -fx-background-color: transparent;
+}
+
+.category{
+
+}
+
+.search{
+    -fx-background-image: url("images/search.png");
+    -fx-background-position: center;
+    -fx-background-size: contain,auto;
+    -fx-background-color: transparent;
+}
